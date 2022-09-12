@@ -1,0 +1,15 @@
+{
+  "MD010": {
+    "code_blocks":true,
+    "spaces_per_tab": 1
+  },
+  "MD013": {
+    "line_length": 120,
+    "heading_line_length": 40,
+    "code_block_line_length": 100
+  },
+  "MD033": {
+    "allowed_elements": ["sup", "sub", "u", "p", "img", "center", "table", "tr", "td", "br", "pre",
+                         "code", "a", "ol", "li"]
+  }
+}
