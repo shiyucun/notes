@@ -3,6 +3,7 @@
 
 - [常用库源码安装](#常用库源码安装)
   - [protobuf](#protobuf)
+  - [yaml-cpp](#yaml-cpp)
 
 ## protobuf
 
@@ -21,4 +22,14 @@ make && make check && sudo make install
 
 # refresh shared library cache
 sudo ldconfig
+```
+
+## yaml-cpp
+
+```shell
+git clone https://github.com/jbeder/yaml-cpp.git
+cd yaml-cpp
+mkdir build && cd build
+cmake .. && make -j
+sudo make install
 ```
