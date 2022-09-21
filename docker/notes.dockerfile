@@ -2,7 +2,7 @@
 # 基于 ubuntu-20.04 构建新镜像
 FROM ubuntu:20.04
 
-ARG DEBIAN_FRONTED="noninteractive"
+ARG DEBIAN_FRONTED=noninteractive
 
 # 时区
 ENV TZ=Asia/Shanghai
