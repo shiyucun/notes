@@ -31,4 +31,19 @@
 `cargo check` | 检测代码语法
 `cargo clean` | 清理，添加模块后如果build有报错，可以尝试先clean
 
+```shell
+# 创建新项目
+cargo new notes_rust_code
+
+# 目录结构
+tree
+# .
+# ├── Cargo.toml
+# └── src
+#     └── main.rs
+
+# 1 directory, 2 files
+```
+
+以上创建的项目保存在[这里](code/notes_rust_code)。
 
