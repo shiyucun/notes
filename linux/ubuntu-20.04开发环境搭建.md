@@ -155,10 +155,25 @@ This would reload your PATH environment variable to include
 Cargo's bin directory ($HOME/.cargo/bin).
 
 To configure your current shell, run:
-source $HOME/.cargo/env
+source $HOME/.cargo/env    # 注意：当前shell需执行该命令使rust生效
 ```
 
 以上是通过 rustup 在线安装 Rust，除此之外还有[其它安装方式](https://forge.rust-lang.org/infra/other-installation-methods.html)，可以按照操作说明进行安装。
+
+以上使用的是官方安装源，可以使用如下命令安装加速安装过程：
+
+```shell
+export RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
+export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup
+sudo curl https://sh.rustup.rs -sSf | sh
+```
+
+Rust会依赖libc和链接器linker，如果遇到提示链接器无法执行的错误，需要手动安装一个C语言编译器：
+
+```shell
+# ubuntu
+sudo apt install build-essential
+```
 
 ## Lua
 
