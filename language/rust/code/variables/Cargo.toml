@@ -1,5 +1,5 @@
 [package]
-name = "notes_rust_code"
+name = "variables"
 version = "0.1.0"
 edition = "2021"
 
